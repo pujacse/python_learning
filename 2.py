@@ -1,4 +1,4 @@
-#birth year calculate
+#birth year calculate.
 
 birth_year = input("Birth Year: ")
 print(type(birth_year))
