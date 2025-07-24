@@ -11,3 +11,12 @@ print(s[::3])
 s = "ArtificialIntelligence"
 print(s[-4:])
 
+#10.Given, name = "Jennifer"
+#write a slice to get the word "ennife".
+name = 'Jennifer'
+print(name[1:-1])
+
+#11.another
+course = 'Python For Beginners'
+another = course[:]
+print(another)
