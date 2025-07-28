@@ -5,14 +5,13 @@
 #Print the down payment.
 
 price = 1000000
-has_good_credit = True
+has_good_credit = False
 
 if has_good_credit:
     down_payment = 0.1 * price
     print(down_payment)
-
 else:
     down_payment = 0.2 * price
     print(down_payment)
 
-print(down_payment)
+print(f"Down_payment: ${down_payment}")
