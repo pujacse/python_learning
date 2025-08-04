@@ -8,4 +8,4 @@ if time >= 12 :
     print("Good Afternoon")
 
 else:
-    print("Good Morning")
+    print("Good Morning.")
