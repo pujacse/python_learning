@@ -20,4 +20,4 @@ if has_good_credit and not has_criminal_record:
     print ("Eligible for loan")
 
 else:
-    print("not eligible for loan")
+    print("not eligible for loan.")
