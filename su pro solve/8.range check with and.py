@@ -8,4 +8,4 @@ number = int(input("Enter an integer: "))
 
 check = 1 to 100
 
-if number in (1 to 100) : dyy
+if number in (1 to 100) :
