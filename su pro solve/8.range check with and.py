@@ -4,8 +4,10 @@
 #If it is, print "Number is in range".
 #Otherwise, print "Number is out of range".
 
-number = int(input("Enter an integer: "))
+number = int(input("Enter a number: "))
 
-check = 1 to 100
+if 1 <= number <= 100:
+    print("number is in range.")
 
-if number in (1 to 100) :
+else:
+    print("number is out of range.")
