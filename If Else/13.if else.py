@@ -1,17 +1,16 @@
-#price of a house is $1M.If buyer has good credit,
-#they need to put down 10%
-#otherwise
-#they need to put down 20%
-#Print the down payment.
+#if name is less than 3 characters long,name must be at least 3 characters.
+#otherwise,if it's more than 50 characters long,
+#name can be a maximum of 50 characters.
+#otherwise,name looks good!
 
-price = 1000000
-has_good_credit = False
+name = input("Enter your name: ")
 
-if has_good_credit:
-    down_payment = 0.1 * price
-    print(down_payment)
+if len(name) < 3:
+    print("name must be at least 3 characters")
+
+elif len(name) > 50:
+    print("name can be a maximum of 50 characters.")
+
 else:
-    down_payment = 0.2 * price
-    print(down_payment)
+    print("name looks good!")
 
-print(f"Down_payment: ${down_payment}")

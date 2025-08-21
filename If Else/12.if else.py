@@ -1,14 +1,13 @@
-#if else statements
+num = int(input("Enter a number: "))
 
-is_hot = False
-is_cold = False
+if num <= 1:
+    print("not prime number")
 
-if is_hot:
-    print("It's a hot day")
-    print("Drink plenty of water")
-elif is_cold:
-    print("It's a cold day")
-    print("Wear warm clothes")
+elif num == 2:
+    print("prime number")
+
+elif num > 2 and num % 2 == 0:
+    print("not a prime number")
+
 else:
-    print("It's a lovely day")
-print("Enjoy your day")
+    print("prime number")
