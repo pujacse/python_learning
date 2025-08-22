@@ -9,3 +9,5 @@ print(names[2::])
 print(names[0:])
 print(names)
 
+print(len(names))
+
