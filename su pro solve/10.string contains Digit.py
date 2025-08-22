@@ -9,4 +9,4 @@ if "0" in string or "1" in string or "2" in string or "3" in string or "4" in st
     print("contains digit")
 
 else:
-    print("does not contain digit")
+    print("does not contain digit.")
