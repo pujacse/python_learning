@@ -11,3 +11,4 @@ print(names)
 
 print(len(names))
 
+print(type(names))
