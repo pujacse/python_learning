@@ -1,4 +1,4 @@
-#Q4. Count vowels in a string
+#Q12. Count vowels in a string
 
 string = input("Enter a string: ")
 vowels = "aeiouAEIOU"
