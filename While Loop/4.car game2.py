@@ -6,8 +6,8 @@
 # >start : car started..Ready to go!
 # >stop : car stopped
 
-command = ""
-started = False
+command = "" # car
+started = False # engine
 
 while True:
     command = input("> ").lower()
