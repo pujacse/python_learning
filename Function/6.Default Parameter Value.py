@@ -35,5 +35,5 @@ my_function(fruits)
 numbers = [1,2,3]
 my_function(numbers)
 
-names = ["puja","sudarshan","moni"]
+names = ["puja","sudarshaan","moni"]
 my_function(names)
