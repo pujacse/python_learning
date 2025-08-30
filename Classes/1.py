@@ -1,56 +1,5 @@
 # Classes in Python:
 
-"""
-name - puja (4 people)
-age - 23
-cgpa - 3.60
-gadget - iphone,macbook,ipad,Pc
-"""
-names =["puja","mitu","toyeba","moni"]
-
-thisdict1 = {
-    "name" : "puja",
-    "age" : 23,
-    "cgpa" : 3.60,
-    "gadget": ["iphone","mobile","laptop"]
-}
-print(thisdict1.values())
-
-thisdict2 = {
-    "name" : "mitu",
-    "age" : 22,
-    "cgpa" : 3.61,
-    "gadget": "mobile"
-}
-print(thisdict2.values())
-
-thisdict3 = {
-    "name" : "toyeba",
-    "age" : 20,
-    "cgpa" : 3.00,
-    "gadget": "mobile"
-}
-print(thisdict3.values())
-
-thisdict4 = {
-    "name" : "moni",
-    "age" : 19,
-    "cgpa" : 2.61,
-    "gadget": "ipad",
-
-    "account":"1334",
-    "balance" : 211321.86,
-    'password':"1312"
-
-}
-print(thisdict4.values())
-
-age = 10
-name = "something"
-ll = [1,2,3]
-
-
-
 class Person:
     def __init__(self, name, age, cgpa, gadgets, balance):
         self.name = name
