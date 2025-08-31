@@ -1,4 +1,4 @@
-# FCFS:
+# FCFS with gantt chart:
 
 number = int(input("Number of program: "))
 
