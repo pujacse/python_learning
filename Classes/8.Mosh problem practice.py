@@ -11,3 +11,6 @@ class Person:
 
 p1 = Person("puja")
 p1.talk()
+
+p1 = Person("Bob")
+p1.talk()
