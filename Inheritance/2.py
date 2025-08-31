@@ -14,7 +14,10 @@ class Student(Person):
 
         # To keep the inheritance of the parent's __init__() function,
         # add a call to the parent's __init__() function:
+
         Person.__init__(self,fname,lname)
+        # OR
+        super().__init__(fname,lname)
 
 p1 = Student("Puja","Das")
 p1.printname()
