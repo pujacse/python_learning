@@ -1,7 +1,6 @@
 # create methods:
 # You can create your own methods inside objects:
 
-
 class Person:
     def __init__(self, name , age):
         self.name = name
