@@ -9,7 +9,7 @@ class Person:
         print(f"My name is : {self.fname} {self.lname}")
 
 class Student(Person):
-    def __init__(self,fname,lname):
+    def __init__(self,fname,lname,year):
 
         # To keep the inheritance of the parent's __init__() function,
         # add a call to the parent's __init__() function:
@@ -17,8 +17,9 @@ class Student(Person):
         Person.__init__(self,fname,lname)
         # OR
         super().__init__(fname,lname)
-        # Add property:
-        self.graduationyear = 2021
 
-p1 = Student("Puja","Das")
+        # Add property:
+        self.graduationyear = year
+
+p1 = Student("Puja","Das", 2021)
 print(p1.graduationyear)
