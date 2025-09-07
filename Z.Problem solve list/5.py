@@ -1,5 +1,5 @@
 # Word frequency Counter - Count the frequency of words in a given sentence using a dictionary.
-
+# Example:
 # my name is puja puja is pagla puja
 # my : 1
 # name : 1
@@ -15,7 +15,6 @@ print(words)
 thisdict = {
 
 }
-
 for word in words:
     if word in thisdict:
         x = thisdict.get(word)
