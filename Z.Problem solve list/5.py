@@ -15,6 +15,7 @@ print(words)
 thisdict = {
 
 }
+
 for word in words:
     if word in thisdict:
         x = thisdict.get(word)
