@@ -26,5 +26,6 @@ for word in words:
         thisdict[word] = x
 
 print("Word frequency: ")
+
 for word,freq in thisdict.items():
     print(f"{word}: {freq}")
