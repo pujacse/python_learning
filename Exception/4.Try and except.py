@@ -5,4 +5,7 @@ try:
     print(x.toUpperCase())
 
 except AttributeError:
-    print(f"{x} is something")
+    print("x is something")
+
+except:
+ print("Something else went wrong")
