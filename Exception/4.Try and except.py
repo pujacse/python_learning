@@ -1,6 +1,7 @@
 # W3 school exercise:
 
 x = "hello"
+
 try:
     print(x.toUpperCase())
 
