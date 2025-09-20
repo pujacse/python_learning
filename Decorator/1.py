@@ -9,5 +9,4 @@ def changecase(func):
 def myfunction():
     return "Hello Sally"
 
-
 print(myfunction())
