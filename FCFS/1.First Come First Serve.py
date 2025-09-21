@@ -3,14 +3,14 @@
 number = int(input("Number of program: "))
 
 processes = []
-for item in range(1, number + 1):
-    arrival_time = int(input(f"Enter Arrival Time P{item}: "))
-    burst_time = int(input(f"Enter Burst Time P{item}: "))
+for pid in range(1, number + 1):
+    arrival_time = int(input(f"Enter Arrival Time P{pid}: "))
+    burst_time = int(input(f"Enter Burst Time P{pid}: "))
 
     pdict = {
         "AT": arrival_time,
         "BT": burst_time,
-        "pid": item
+        "pid": pid
     }
     processes.append(pdict)
 
@@ -48,6 +48,6 @@ for process in processes:
 
 for result in results:
     print(f"Process: P{result.get('PID')}, AT: {result.get('AT')}, "
-          f"{result.get('BT')}, {result.get('CT')}, {result.get('TAT')}, {result.get('WT')}")
+          f" BT : {result.get('BT')}, CT : {result.get('CT')}, TAT : {result.get('TAT')}, WT : {result.get('WT')}")
 
 print(f"Average Waiting time: {waiting_time / number}")
