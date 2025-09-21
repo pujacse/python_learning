@@ -46,7 +46,6 @@ for process in processes:
 
     current_time = CT
 
-
 for result in results:
     print(f"Process: P{result.get('PID')}, AT: {result.get('AT')}, "
           f" BT : {result.get('BT')}, CT : {result.get('CT')}, TAT : {result.get('TAT')}, WT : {result.get('WT')}")
