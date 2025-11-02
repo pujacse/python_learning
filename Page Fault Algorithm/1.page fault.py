@@ -3,6 +3,7 @@
 # [0,3,1,2,4,1,2,3,0,4]
 # Frame_size = 3
 
+
 def FIFO(processes, frame_size):
 
     tracker = [["-" for _ in range(frame_size)] for i in range(len(processes))]
