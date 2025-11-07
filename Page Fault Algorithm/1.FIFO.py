@@ -1,4 +1,4 @@
-# Page_Fault (FCFS):
+# Page_Fault (FCFS or FIFO):
 # [0,3,1,2,4,1,2,3,0,4]
 # Frame_size = 3
 
