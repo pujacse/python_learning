@@ -33,7 +33,6 @@ def FIFO(processes, frame_size):
     for i in tracker:
         print(i)
 
-if __name__=="__main__":
-    processes=list(map(int,input("Enter processes: ").split()))
-    frame_size=int(input("Enter frame size: "))
-    FIFO(processes,frame_size)
+processes=list(map(int,input("Enter processes: ").split()))
+frame_size=int(input("Enter frame size: "))
+FIFO(processes,frame_size)
