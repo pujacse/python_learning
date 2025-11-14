@@ -1,9 +1,3 @@
-# Page_Fault :
-
-# [0,3,1,2,4,1,2,3,0,4]
-# Frame_size = 3
-
-
 def FIFO(processes, frame_size):
 
     tracker = [["-" for _ in range(frame_size)] for i in range(len(processes))]
@@ -35,7 +29,7 @@ def FIFO(processes, frame_size):
     for i in tracker:
         print(i)
 
-if __name__ == "__main__":
-    processes = [0,3,1,2,4,1,2,3,0,4]
-    frame_size = 3
-    FIFO(processes, frame_size)
+if __name__=="__main__":
+    processes=list(map(int,input("Enter processes: ").split()))
+    frame_size=int(input("Enter frame size: "))
+    FIFO(processes,frame_size)
