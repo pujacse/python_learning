@@ -1,12 +1,8 @@
 # Page_Fault (FIFO):
-# [0,3,1,2,4,1,2,3,0,4]
-# Frame_size = 3
 
 def FIFO(processes, frame_size):
 
-    tracker = [["-" for _ in range(frame_size)] for i in range(len(processes))]
-
-    # pointer to check where to replace
+    table = [["-" for _ in range(frame_size)] for i in range(len(processes))]
 
     replace = 0
     page_fault = 0
@@ -14,23 +10,19 @@ def FIFO(processes, frame_size):
     for i in range (len(processes)):
         process = processes[i]
 
-        # copy the previous alignment
         if i >= 1:
-            tracker[i] = list(tracker[i-1])
+            table[i] = list(table[i-1])
 
-        if process not in tracker[i]:
+        if process not in table[i]:
             # in FIFO, we replace with the replacement pointer
             page_fault += 1
-            tracker[i][replace] = process
+            table[i][replace] = process
 
-            # increase our pointer
-            # circular pointer
             replace = (replace+1) % frame_size
 
-    # that's it
     print("FIFO page replacement")
     print("Page_Faults : ",page_fault)
-    for i in tracker:
+    for i in table:
         print(i)
 
 processes=list(map(int,input("Enter processes: ").split()))
