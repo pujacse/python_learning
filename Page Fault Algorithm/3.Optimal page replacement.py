@@ -1,6 +1,4 @@
 # Page_Fault (OPT):
-# [2,3,2,1,5,2,4,5,3,2,5,2]
-# Frame_size = 3
 
 def OPT(processes, frame_size):
 
@@ -35,7 +33,6 @@ def OPT(processes, frame_size):
     for r in tracker:
         print(r)
 
-if __name__=="__main__":
-    processes=list(map(int,input("Enter processes: ").split()))
-    frame_size=int(input("Enter frame size: "))
-    OPT(processes,frame_size)
+processes=list(map(int,input("Enter processes: ").split()))
+frame_size=int(input("Enter frame size: "))
+OPT(processes,frame_size)
