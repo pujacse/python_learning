@@ -8,6 +8,7 @@ def LRU(processes, frame_size):
     last_used = {}
 
     for i,process in enumerate(processes):
+        process = processes[i]
         # i for index and p for page number
 
         if i >= 1:
