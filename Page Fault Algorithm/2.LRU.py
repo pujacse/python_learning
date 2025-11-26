@@ -29,8 +29,10 @@ def LRU(processes, frame_size):
             j=table[i].index("-")
 
         else:
-            # ei line valo kore bujhte hobe. ami bujhi nai
-            # ei line ta.
+            # slot 0, 1, 2—এই তিনটার মধ্যে
+            # কোন slot-এর page সবচেয়ে আগে ব্যবহার হয়েছে
+            # (মানে যেই slot-এর last_used মান সবচেয়ে ছোট),
+            # সেই slot-এর index = j
             j=min(range(frame_size),key=lambda x:last_used.get(table[i][x],-1))
 
         table[i][j] = process
