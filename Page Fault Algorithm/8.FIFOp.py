@@ -1,7 +1,7 @@
 # FIFO algorithm:
 
 def FIFO(processes, frame_size):
-    table = [["_" for _ in range(frame_size)] for i in range(len(processes))]
+    table = [["_" for i in range(frame_size)] for i in range(len(processes))]
 
     replace = 0
     page_fault = 0
