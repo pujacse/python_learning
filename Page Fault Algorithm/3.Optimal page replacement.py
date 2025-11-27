@@ -6,7 +6,7 @@ def OPT(processes, frame_size):
 
     page_fault = 0
 
-    for i,process in enumerate(processes):
+    for i in range(len(processes)):
         process = processes[i]
 
         if i >= 1:
