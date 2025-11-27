@@ -2,7 +2,7 @@
 
 def OPT(processes, frame_size):
 
-    table=[["-" for _ in range(frame_size)]for i in range(len(processes))]
+    table=[["-" for i in range(frame_size)]for i in range(len(processes))]
 
     page_fault = 0
 
