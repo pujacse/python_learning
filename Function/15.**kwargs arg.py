@@ -14,3 +14,13 @@ def my_function():
 
 print(my_function())
 print(name)
+
+
+# another:
+name = "variable outside function"
+def my_function():
+    name = "variable inside function"
+    return name
+
+print(my_function())
+print(name)
