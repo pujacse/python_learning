@@ -9,8 +9,8 @@ print(list1)
 list1.extend([5,6])
 print(list1)
 
-list1.remove(2)
+list1.remove(2) # only remove for mentioned position value
 print(list1)
 
-del list1[1]
+del list1[1] # only delete for mentioned index
 print(list1)
