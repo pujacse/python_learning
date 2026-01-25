@@ -24,3 +24,14 @@ def my_function():
 
 print(my_function())
 print(name)
+
+
+# another example:
+name = "variable outside function"
+def my_function():
+    global name
+    name = "variable inside function"
+    return name
+
+print(my_function())
+print(name)
